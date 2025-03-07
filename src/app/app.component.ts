@@ -11,5 +11,8 @@ export class AppComponent {
   title = 'Hello-world-app';
   message: string = 'Hello from BridgeLabz using One Way Data Bindings';
   logoUrl: string = 'BL_logo_square_jpg.jpg';
+  openBridgeLabzSite(): void {
+    window.open('https://www.bridgelabz.com', '_blank');
+  }
 
 }
