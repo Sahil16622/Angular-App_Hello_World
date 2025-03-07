@@ -1,34 +1,25 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-// import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-
-@Component({
-  selector: 'app-root',
-  imports: [ FormsModule],
-=======
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule, CommonModule],
->>>>>>> UC-05
+  imports: [RouterOutlet, FormsModule, CommonModule],  // ✅ Merged imports properly
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css'],  // ✅ Fixed `styleUrl` -> `styleUrls`
 })
 export class AppComponent {
   title = 'HelloWorld';
   message: string = 'Hello from BridgeLabz using One Way Data Bindings';
   logoUrl: string = 'BL_logo_square_jpg.jpg';
-  openBridgeLabzSite(){
+  userName: string = '';
+  errorMessage: string = '';
+
+  openBridgeLabzSite() {
     window.open('https://www.bridgelabz.com', '_blank');
   }
-  userName: string = '';
-<<<<<<< HEAD
-=======
-  errorMessage: string = '';
+
   validateUserName() {
     const namePattern = /^[A-Z]{1}[a-zA-Z]{2,}$/; // Starts with uppercase, min 3 letters
     if (!namePattern.test(this.userName)) {
@@ -38,5 +29,4 @@ export class AppComponent {
       this.errorMessage = '';
     }
   }
->>>>>>> UC-05
 }
