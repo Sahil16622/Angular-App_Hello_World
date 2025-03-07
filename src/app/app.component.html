@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+
     <div class="container">
       <h1>Hello From BridgeLabz</h1>
       <h2>{{ message }}</h2>
@@ -15,6 +8,18 @@
         width="200"
         (click)="openBridgeLabzSite()"
       />
+      <h3>Hello from BridgeLabz, {{ userName }}</h3>
+
+      <!-- <input type="text" [(ngModel)]="userName" placeholder="Enter your name" /> -->
+
+      <!-- <h4>Hello from BridgeLabz</h4> -->
+
+      <input
+        type="text"
+        [(ngModel)]="userName"
+        (input)="validateUserName()"
+        placeholder="Enter your name"
+      />
+      <p *ngIf="errorMessage">{{ errorMessage }}</p>
     </div>
-  </body>
-</html>
+  
