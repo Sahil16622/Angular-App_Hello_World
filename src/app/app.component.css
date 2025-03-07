@@ -17,3 +17,18 @@
     margin: 20px auto;
     transition: transform 0.3s ease-in-out;
   }
+  h3 {
+    text-align: center;
+    color: orange;
+    font-family: Arial, sans-serif;
+  }
+  
+  input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+  }
