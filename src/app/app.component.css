@@ -1,7 +1,12 @@
-img
-{
+.container {
     display: block;
-    margin: 0 auto;
-    width: 25%;
-    
-}
+    margin: 0px auto;
+    /* border: 2px solid black; */
+    justify-items: center;
+  }
+  h1 {
+    color: red;
+  }
+  h2 {
+    color: yellowgreen;
+  }

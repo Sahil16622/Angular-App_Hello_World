@@ -10,4 +10,6 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Hello-world-app';
   message: string = 'Hello from BridgeLabz using One Way Data Bindings';
+  logoUrl: string = 'BL_logo_square_jpg.jpg';
+
 }
